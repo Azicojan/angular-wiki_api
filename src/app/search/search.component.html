@@ -1,0 +1,15 @@
+<div class="section">
+  <h2 class="title">Wikipedia Search</h2>
+  <div class="field has-addons">
+    <div class="control">
+      <input class="input" type="text" [(ngModel)]="keyword" placeholder="Enter a keyword">
+    </div>
+    <div class="control">
+      <button class="button is-primary" (click)="search()">Search</button>
+    </div>
+  </div>
+  <ul class="mt-4">
+    <li class="mb-2" *ngFor="let result of searchResults">{{ result }}</li>
+  </ul>
+</div>
+
